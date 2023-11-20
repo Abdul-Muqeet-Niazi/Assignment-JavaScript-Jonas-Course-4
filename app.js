@@ -46,3 +46,26 @@ document.querySelector(".Header").addEventListener("click", function () {
 
 // So now how ever you click on the header it will log the message!
 
+// queryselectorAll:
+// It checks and get the class/ID of this element in all of html file in which this type of class name is located (Best example is given in modal project).
+
+const queryExample = document.querySelectorAll(".Header");
+console.log(queryExample);
+
+// It most looks like an array but it does not an array !
+
+// ClassList:
+// where this element looks for class as one or multiple(If you wanna add), It have common functions example (add, remove, toggle, contain)
+const ClassExample = document.querySelector(".Header").classList.add("Hidden");
+console.log(ClassExample);
+// Now it adds the hidden class (open the node list in console) as you can remove add toggle(explain later ↓) and contains(check if it is present or not)
+
+// addEventListener('Keydown');
+// In this statement it is described that it has many functionality like click, hold etc. So we also add keyboard functionality as well.
+const addEventListenerExapmle = document.addEventListener(
+  "keydown",
+  function (e) {
+    console.log(e); // now if you enter any button on keyboard it shows in the console of list of keyboard elements,
+    console.log(e.key); // now it shows the value of typed button like textcontent gave us.
+  }
+);
